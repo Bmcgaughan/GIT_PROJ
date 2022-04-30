@@ -137,3 +137,8 @@ section {
 .cd-pd {
   padding: 10px;
 }
+
+.icon i {
+  font-size: 3rem;
+  color: green;
+}
