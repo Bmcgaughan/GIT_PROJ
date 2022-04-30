@@ -23,6 +23,29 @@ a {
   background-image: url('../img/bars-solid.svg');
 }
 
+/* SECTION LEVEL */
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  right: 45%;
+  height: 2px;
+  background: green;
+  display: block;
+}
+
 section {
   padding: 100px 0;
   overflow: hidden;
@@ -58,9 +81,9 @@ section {
 }
 
 .read-more:hover {
-    text-decoration: none;
-    background: linear-gradient(45deg, rgb(1, 101, 1) 0%, green 100%);
-    color: white;
+  text-decoration: none;
+  background: linear-gradient(45deg, rgb(1, 101, 1) 0%, green 100%);
+  color: white;
 }
 
 /* HERO STYLES */
@@ -94,5 +117,23 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #5846f9;
+}
+
+/* SERVICES */
+.section-bg {
+  background-color: #f9f8ff;
+}
+.section-title p {
+  text-align: start;
+}
+
+.services .icon-box {
+  text-align: center;
+  padding: 70px 20px 80px 20px;
+  transition: all ease-in-out 0.3s;
+  background: white;
+}
+
+.cd-pd {
+  padding: 10px;
 }
