@@ -14,12 +14,17 @@
 .link-last {
   border-radius: 5px;
   transition: 0.3s;
-  border: 2px solid blue;
+  background: var(--primary-20darker);
+  border: 2px solid white;
+  color: white;
 }
 
 .link-last:hover {
-  color: white;
-  background-color: blue;
+  color: var(--primary-20darker);
+  background-color: white;
+  border: 2px solid var(--primary-20darker);
+
+
 }
 
 a {
