@@ -120,7 +120,7 @@ section {
 
 .hero-logo {
   height: 350px;
-  padding-left: 50px;
+  padding-left: 150px;
 }
 
 .hero-text p,
@@ -130,7 +130,11 @@ h2 {
 }
 
 .hero-text div {
-  margin-top: 10px;
+  margin-top: 30px;
+}
+
+.hero-ital {
+  font-style: italic;
 }
 
 /* ABOUT SECTION STYLES */
