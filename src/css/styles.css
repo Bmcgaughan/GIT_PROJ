@@ -57,7 +57,7 @@ a {
 }
 
 section {
-  padding: 100px 0;
+  padding: 75px 0;
   overflow: hidden;
 }
 
@@ -120,6 +120,17 @@ section {
 
 .hero-logo {
   height: 350px;
+  padding-left: 50px;
+}
+
+.hero-text p,
+h1,
+h2 {
+  margin-bottom: 15px;
+}
+
+.hero-text div {
+  margin-top: 10px;
 }
 
 /* ABOUT SECTION STYLES */
@@ -159,6 +170,10 @@ section {
 
 .cd-pd {
   padding: 10px;
+}
+
+.icon-box:hover {
+  box-shadow: 0px 0 25px 0 rgb(0 0 0 / 10%);
 }
 
 .icon i {
