@@ -1,6 +1,7 @@
 'use strict';
 
 const navbar = document.querySelector('.navbar-nav');
+AOS.init();
 
 (function () {
   'use strict';
