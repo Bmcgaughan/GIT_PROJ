@@ -35,7 +35,6 @@ const navbar = document.querySelector('.navbar-nav');
   })(jQuery);
 })();
 
-
 // changing opacity on navbar items when hovered
 const handleHover = function (e) {
   if (e.target.classList.contains('nav-link')) {
