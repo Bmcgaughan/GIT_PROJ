@@ -151,3 +151,13 @@ $('.get-started').click(function (e) {
   const id = e.target.getAttribute('href');
   window.scrollTo({ top: getOffset(id), behavior: 'smooth' });
 });
+
+$('.footer-links li').click(function (e) {
+  e.preventDefault();
+  const id = e.target.getAttribute('href');
+  if (id === '#hero') {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    window.scrollTo({ top: getOffset(id), behavior: 'smooth' });
+  }
+});
