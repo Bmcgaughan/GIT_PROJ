@@ -21,67 +21,105 @@
     <title>Get it Together!</title>
   </head>
   <body>
-    <nav id="nav" class="navbar navbar-expand-lg navbar-cust bg-light">
-      <div class="nav-contain container">
-        <a class="navbar-brand" href="#nav">
-          <img
-            src="./src/img/logos/Get It Together_logoFinal_outlines.svg"
-            width="50"
-            height="50"
-            alt=""
-          />
-        </a>
-        <h4 class="navbar-text mr-auto">Get it Together</h4>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="header">
+      <nav id="nav" class="navbar navbar-expand-lg navbar-cust bg-light">
+        <div class="nav-contain container">
+          <a class="navbar-brand" href="#nav">
+            <img
+              src="./src/img/logos/Get It Together_logoFinal_outlines.svg"
+              width="50"
+              height="50"
+              alt=""
+            />
+          </a>
+          <h4 class="navbar-text mr-auto">Get it Together</h4>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div
-          class="collapse navbar-collapse navbar"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#hero"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about"
-                >About <span class="sr-only"></span
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services"
-                >Services <span class="sr-only"></span
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonials"
-                >Reviews<span class="sr-only"></span
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link link-last contact-modal"
-                href="#"
-                data-toggle="modal"
-                data-target="#contactmodal"
-                >Free Estimate <span class="sr-only"></span
-              ></a>
-            </li>
-          </ul>
+          <div
+            class="collapse navbar-collapse navbar"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#hero"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about"
+                  >About <span class="sr-only"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services"
+                  >Services <span class="sr-only"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials"
+                  >Reviews<span class="sr-only"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link-last contact-modal"
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#contactmodal"
+                  >Free Estimate <span class="sr-only"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+
+      <section id="hero">
+        <div class="row justify-content-center">
+          <div
+            class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column hero-text"
+          >
+            <h1>Organize your life</h1>
+            <h2>Organization for peace of mind</h2>
+            <p>
+              Are you overwhelmed? Buried under toys, clothes and stuff? Let the
+              professionals of Get It Together help you declutter, organize and
+              transform your home.
+            </p>
+            <p class="hero-ital">
+              "Out of clutter, find simplicity. From discord, find harmony. In
+              the middle of difficulty lies opportunity." ~ Albert Einstein
+            </p>
+            <div>
+              <a href="#about" class="gen-btn btn-get-started scrollto"
+                >Get Started</a
+              >
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img aos-init aos-animate"
+            data-aos="zoom-in"
+            data-aos-delay="150"
+          >
+            <img
+              src="./src/img/logos/Get It Together_logoFinal.png"
+              class="img-fluid animated hero-logo"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </div>
     <div
       class="modal fade"
       id="contactmodal"
@@ -123,41 +161,6 @@
         </div>
       </div>
     </div>
-    <section id="hero">
-      <div class="row justify-content-center">
-        <div
-          class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column hero-text"
-        >
-          <h1>Organize your life</h1>
-          <h2>Organization for peace of mind</h2>
-          <p>
-            Are you overwhelmed? Buried under toys, clothes and stuff? Let the
-            professionals of Get It Together help you declutter, organize and
-            transform your home.
-          </p>
-          <p class="hero-ital">
-            "Out of clutter, find simplicity. From discord, find harmony. In the
-            middle of difficulty lies opportunity." ~ Albert Einstein
-          </p>
-          <div>
-            <a href="#about" class="gen-btn btn-get-started scrollto"
-              >Get Started</a
-            >
-          </div>
-        </div>
-        <div
-          class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img aos-init aos-animate"
-          data-aos="zoom-in"
-          data-aos-delay="150"
-        >
-          <img
-            src="./src/img/logos/Get It Together_logoFinal.png"
-            class="img-fluid animated hero-logo"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
     <main id="main">
       <section id="about">
         <section id="about" class="about">

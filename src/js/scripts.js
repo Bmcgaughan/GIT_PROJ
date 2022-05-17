@@ -35,19 +35,35 @@ const navbar = document.querySelector('.navbar-nav');
   })(jQuery);
 })();
 
-// changing opacity on navbar items when hovered
-const handleHover = function (e) {
-  if (e.target.classList.contains('nav-link')) {
-    const link = e.target;
-    const siblings = link.closest('.navbar-nav').querySelectorAll('.nav-link');
-    siblings.forEach((el) => {
-      if (el !== link) el.style.opacity = this;
-    });
+
+//navbar scroll events to sticky navbar
+const header = document.querySelector('.header');
+const nav = document.querySelector('.navbar');
+const navHeight = nav.getBoundingClientRect().height;
+const body = document.body;
+console.log(body);
+
+const stickyNav = function (entries) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) {
+    nav.classList.add('sticky');
+    body.style.paddingTop = navHeight + 'px';
+  } else {
+    nav.classList.remove('sticky');
+    body.style.paddingTop = '0px';
   }
 };
 
-nav.addEventListener('mouseover', handleHover.bind(0.5));
-nav.addEventListener('mouseout', handleHover.bind(1));
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
+});
+
+headerObserver.observe(header);
+
+//updating navbar on scroll
 
 //button click scroll events
 $('.navbar-nav').click(function (e) {

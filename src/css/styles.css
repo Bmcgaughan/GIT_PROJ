@@ -10,7 +10,16 @@
 .navbar > ul > li {
   padding: 10px 0 10px 10px;
 }
-.navbar-text {
+
+#nav.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  z-index: 1000;
+}
+
+*/ .navbar-text {
   display: flex;
   align-content: center;
   margin-bottom: 0;
