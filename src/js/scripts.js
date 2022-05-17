@@ -35,13 +35,11 @@ const navbar = document.querySelector('.navbar-nav');
   })(jQuery);
 })();
 
-
 //navbar scroll events to sticky navbar
 const header = document.querySelector('.header');
 const nav = document.querySelector('.navbar');
 const navHeight = nav.getBoundingClientRect().height;
 const body = document.body;
-console.log(body);
 
 const stickyNav = function (entries) {
   const [entry] = entries;
@@ -64,6 +62,44 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 headerObserver.observe(header);
 
 //updating navbar on scroll
+
+$(window).scroll(() => {
+  const windscroll = $(window).scrollTop();
+  if (windscroll >= navHeight) {
+    console.log($('section'));
+    $('section').each(function (i) {
+      if ($(this).position().top <= windscroll + 75) {
+        if (i > 3) {
+          i -= 1;
+        }
+        $('.nav-item.active').removeClass('active');
+        $('.nav-item').eq(i).addClass('active');
+      }
+    });
+  }
+});
+
+// $(window).scroll(function() {
+//   const windscroll = $(window).scrollTop();
+//   console.log(windscroll)
+//   if (windscroll >= navHeight) {
+//       $('nav').addClass('fixed');
+//       $('#section').each(function(i) {
+//         console.log(i)
+//           if ($(this).position().top <= windscroll - navHeight) {
+//               $('nav a.active').removeClass('active');
+//               $('nav a').eq(i).addClass('active');
+//           }
+//       });
+
+//   } else {
+
+//       $('nav').removeClass('fixed');
+//       $('nav a.active').removeClass('active');
+//       $('nav a:first').addClass('active');
+//   }
+
+// }).scroll();​
 
 //button click scroll events
 $('.navbar-nav').click(function (e) {
