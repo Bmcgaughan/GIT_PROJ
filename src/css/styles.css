@@ -10,6 +10,11 @@
 .navbar > ul > li {
   padding: 10px 0 10px 10px;
 }
+.navbar-text {
+  display: flex;
+  align-content: center;
+  margin-bottom: 0;
+}
 
 .link-last {
   border-radius: 5px;
@@ -120,7 +125,7 @@ section {
 
 .hero-logo {
   height: 350px;
-  padding-left: 150px;
+  padding-left: 75px;
 }
 
 .hero-text p,
