@@ -107,6 +107,15 @@ function getOffset(id) {
   return offSet;
 }
 
+$(document).ready(function () {
+  $('nav')
+    .find('li')
+    .on('click', 'a', function () {
+      console.log('clicked');
+      $('.navbar-collapse').collapse('hide');
+    });
+});
+
 //button click scroll events
 $('.navbar-nav').click(function (e) {
   e.preventDefault();
