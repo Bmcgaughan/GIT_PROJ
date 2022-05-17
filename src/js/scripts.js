@@ -66,7 +66,6 @@ headerObserver.observe(header);
 $(window).scroll(() => {
   const windscroll = $(window).scrollTop();
   if (windscroll >= navHeight) {
-    console.log($('section'));
     $('section').each(function (i) {
       if ($(this).position().top <= windscroll + 75) {
         if (i > 3) {
@@ -101,28 +100,43 @@ $(window).scroll(() => {
 
 // }).scroll();​
 
+function getOffset(id) {
+  const element = document.querySelector(id);
+  const elementPosition = element.getBoundingClientRect().top + 50;
+  const offSet = elementPosition + window.pageYOffset - navHeight;
+  return offSet;
+}
+
 //button click scroll events
 $('.navbar-nav').click(function (e) {
   e.preventDefault();
   if (e.target.classList.contains('nav-link')) {
     const id = e.target.getAttribute('href');
-    console.log(id);
-    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+    if (id === '#hero') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      window.scrollTo({ top: getOffset(id), behavior: 'smooth' });
+    }
   }
   let li = $(this).children();
   li.removeClass('active');
-  console.log(e.target);
   $(e.target).parent().addClass('active');
 });
 
 $('.navbar-brand').click(function (e) {
+  e.preventDefault();
   const id = $(e.target).parent()[0].getAttribute('href');
-  document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+  window.scrollTo({ top: getOffset(id), behavior: 'smooth' });
 });
 
 $('.read-more').click(function (e) {
   e.preventDefault();
   const id = e.target.getAttribute('href');
-  console.log(id);
-  document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+  window.scrollTo({ top: getOffset(id), behavior: 'smooth' });
+});
+
+$('.get-started').click(function (e) {
+  e.preventDefault();
+  const id = e.target.getAttribute('href');
+  window.scrollTo({ top: getOffset(id), behavior: 'smooth' });
 });

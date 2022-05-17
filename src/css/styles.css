@@ -543,7 +543,7 @@ textarea.form-control {
     padding: 0;
   }
 
-  .contact-inner {
+  /* .contact-inner {
     padding: 27px 20px 37px;
     border: none;
     box-shadow: none;
@@ -556,5 +556,81 @@ textarea.form-control {
   .contact-wrapper {
     background: #39459b;
     border: 10px solid #0d99d7;
+  } */
+}
+
+@media (min-width: 900px) {
+  .hero-text {
+    padding-left: 50px;
+  }
+
+  .hero-img {
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 768px) {
+  .contact-inner,
+  .modal-dialog,
+  .contact-wrapper {
+    max-width: 450px;
+    min-width: 0;
+  }
+
+  .contact-inner {
+    margin: 0;
+  }
+
+  .hero-text {
+    padding-left: 25px;
+  }
+
+  #hero h1 {
+    font-size: 45px;
+  }
+
+  #hero h2 {
+    font-size: 30px;
+  }
+
+
+  .hero-img {
+    text-align: center;
+  }
+
+  .get-started {
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact-inner,
+  .modal-dialog,
+  .contact-wrapper {
+    max-width: 375px;
+    min-width: 0;
+  }
+
+  .contact-inner {
+    margin: 0;
+  }
+  .hero-text {
+    padding-left: 25px;
+  }
+
+  .hero-img {
+    text-align: center;
+  }
+
+  #hero h1 {
+    font-size: 30px;
+  }
+
+  #hero h2 {
+    font-size: 20px;
+  }
+
+  .get-started {
+    text-align: center;
   }
 }
