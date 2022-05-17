@@ -100,6 +100,7 @@ $(window).scroll(() => {
 
 // }).scroll();​
 
+//return element offsets for scrolling
 function getOffset(id) {
   const element = document.querySelector(id);
   const elementPosition = element.getBoundingClientRect().top + 50;
@@ -107,6 +108,7 @@ function getOffset(id) {
   return offSet;
 }
 
+//collapse navbar on click
 $(document).ready(function () {
   $('nav')
     .find('li')
