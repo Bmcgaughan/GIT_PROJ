@@ -99,12 +99,16 @@ section {
   padding: 10px;
   border-radius: 5px;
   transition: 0.3s;
-  border: 2px solid var(--primary-10darker);
+  background-color: var(--primary-20darker);
+  color: white;
 }
 
 .gen-btn:hover {
-  color: white;
-  background-color: var(--primary-10darker);
+  padding: 10px;
+  color: var(--primary-10darker);
+  border: 2px solid var(--primary-10darker);
+  border-radius: 5px;
+  background: white;
   text-decoration: none;
 }
 
@@ -371,6 +375,10 @@ h2 {
   margin: 0;
 }
 
+#footer a {
+  color: white;
+}
+
 .footer-newsletter form {
   margin-top: 30px;
   background: #fff;
@@ -603,6 +611,35 @@ textarea.form-control {
 .contact-inner button:hover i {
   -webkit-transform: translateX(4px);
   transform: translateX(4px);
+}
+
+/* BACK TOP */
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  font-size: 2rem;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: var(--primary-20darker);
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  color: white;
+}
+
+.back-to-top:hover {
+  background: #60827c;
 }
 
 @media (max-width: 767px) {
